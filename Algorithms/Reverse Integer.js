@@ -1,7 +1,6 @@
 var reverse = function(x) {
     const arr = x.toString().split('').reverse();
-    let counter = 0;
-    while (arr[counter] === 0){
+    while (arr[0] === 0){
         arr.shift();
     }
     let result = Number.parseInt(arr.join("").toString());
