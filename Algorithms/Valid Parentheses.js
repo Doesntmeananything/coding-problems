@@ -24,16 +24,20 @@ var isValid = function(s) {
         '[': ']'
     };
 
-    // Use stack to check for valid pairs
-    //
+    // Use stack structure to check for valid pairs
+    // Valid pairs will always be matched at the top of the stack
     const stack = [];
     for (let i = 0; i < s.length; i++) {
+        // If current bracket is a valid pair for the top of the stack
         if (s[i] === bracketPairs[stack[stack.length - 1]]) {
+            // Remove the top and start looking for new pairs
             stack.pop()
         } else {
+            // Else add the bracket to the top of the stack
             stack.push(s[i]);
         }
     }
+    // If the stack is not empty, an invalid pair is present
     if (stack.length > 0) {
         return false;
     }
