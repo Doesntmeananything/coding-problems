@@ -8,4 +8,4 @@ const findGreatestCommonDivisor = function(m, n) {
   return n;
 };
 
-console.log(findGreatestCommonDivisor(119, 544));
+console.log(findGreatestCommonDivisor(2166, 6099));
