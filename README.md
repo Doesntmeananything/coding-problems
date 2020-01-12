@@ -1,3 +1,3 @@
 # coding-problems
 
-A collection of solutions to various coding and programming challenges found on coding websites.
+A collection of solutions to various challenges found on coding websites.
