@@ -1,8 +1,15 @@
-// Constructor
-function Cat(name, color) {
-  this.name = name;
-  this.color = color;
-}
+const fib = (n) => {
+  if (n == 1 || n == 2) return 1;
 
-const myCat = new Cat("Paws", "red");
-console.log(myCat);
+  let prev = 1;
+  let curr = 1;
+
+  for (let i = 3; i <= n; i++) {
+    let sum = prev + curr;
+    prev = curr;
+    curr = sum;
+  }
+  return curr;
+};
+
+console.log(fib(20));
