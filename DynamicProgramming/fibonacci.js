@@ -1,4 +1,4 @@
-// Since computing n fibonacci number requires only two previous results
+// Since computing n fibonacci number requires only two previous results,
 // we save them for the duration of one loop
 const fib = (n) => {
   if (n == 1 || n == 2) return 1;
